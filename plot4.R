@@ -24,7 +24,7 @@ with(plot4_data, {
        ylab="Voltage", xlab="")
 
     plot(Sub_metering_1~combi_dt, type="l", 
-       ylab="Energy sub metering", xlab="")
+       ylab="Energy Sub Metering", xlab="")
       lines(Sub_metering_2~combi_dt,col='Red')
       lines(Sub_metering_3~combi_dt,col='Blue')
       legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, bty="n",

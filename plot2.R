@@ -11,7 +11,7 @@ plot_dat <- subset(HPC, subset=Date %in% c("1/7/2007", "2/7/2007"))
 combi_dt <- as.POSIXct(paste(plot_dat$Date, plot_dat$Time), format="%d/%m/%Y %H:%M:%S")
 
 png("plot2.png", width=480, height=480)
-plot2 <- plot(plot_dat$Global_active_power~combi_dt, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+plot2 <- plot(plot_dat$Global_active_power~combi_dt, type="l", xlab="", ylab="Global Active Power (Kilowatts)")
 dev.off()
 
 

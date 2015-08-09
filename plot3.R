@@ -15,7 +15,7 @@ png("plot3.png", width=480, height=480)
 
 with(plot3_data, {
   plot(plot_dat.Sub_metering_1~combi_dt, type="l",
-       ylab="Energy sub metering", xlab="")
+       ylab="Energy Sub Metering", xlab="")
   lines(plot_dat.Sub_metering_2~combi_dt,col='Red')
   lines(plot_dat.Sub_metering_3~combi_dt,col='Blue')
 })
