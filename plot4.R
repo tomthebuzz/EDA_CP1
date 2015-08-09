@@ -6,7 +6,7 @@
 HPC <- read.csv("household_power_consumption.csv", sep=";", dec=".", na.strings = "?")
 plot_dat <- subset(HPC, subset=Date %in% c("1/7/2007", "2/7/2007"))
 
-## Plot 4
+## Plot 4 - Multi Panel Plot
 
 combi_dt <- as.POSIXct(paste(plot_dat$Date, plot_dat$Time), format="%d/%m/%Y %H:%M:%S")
 plot4_data <- data.frame(combi_dt, plot_dat)
